@@ -16,11 +16,9 @@ class Solution {
             j++;
         }
 
-        if(i<end){
-            c = arr[i];
-            arr[i] = pivot;
-            arr[end] = c;
-        }
+        c = arr[i];
+        arr[i] = pivot;
+        arr[end] = c;
 
         if(start<i-1) quickSort(arr,start,i-1);
         if(i+1<end) quickSort(arr,i+1,end);
